@@ -1,6 +1,14 @@
+## 📸 Screenshots
+
+<div align="center">
+   <img src="./screenshots/login.png" alt="Login Screen" width="300" />
+   <img src="./screenshots/home.png" alt="Home Screen" width="300" />
+</div>
+
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+
 <div align="center">
    <h1>📱 <span style="color:#4F8A8B">Expense Tracker - Android APK Guide</span> 📱</h1>
    <img src="https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white" />
@@ -91,10 +99,11 @@ android/app/build/outputs/apk/debug/app-debug.apk
 > ℹ️ For release (signed) APK instructions, or Play Store publishing, see the official [Capacitor Documentation](https://capacitorjs.com/docs) and [Android Documentation](https://developer.android.com/studio/publish).
 
 ---
+
 =======
 
->>>>>>> ba7cc176f87534c226fef048d9214f35bb1760e0
->>>>>>> 3c5dfd9e1a7dbec4f5b981e8ce08f70a1b5c2193
+> > > > > > > ba7cc176f87534c226fef048d9214f35bb1760e0
+> > > > > > > 3c5dfd9e1a7dbec4f5b981e8ce08f70a1b5c2193
 
 <div align="center">
   <h1>💸 Expense Tracker - Vite/React/Capacitor</h1>
