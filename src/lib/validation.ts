@@ -21,7 +21,8 @@ export const nameSchema = z
 export const phoneSchema = z
   .string()
   .min(10, 'Phone number must be at least 10 digits')
-  .max(15, 'Phone number must be less than 15 digits')
+  .max(15, 'Phone number must be less than 15 digits')  npm install @capacitor/core @capacitor/cli
+  npx cap init
   .regex(/^[0-9+\-\s()]+$/, 'Please enter a valid phone number');
 
 export const loginSchema = z.object({
