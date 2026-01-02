@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+<div align="center">
+   <h1>📱 <span style="color:#4F8A8B">Expense Tracker - Android APK Guide</span> 📱</h1>
+   <img src="https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white" />
+   <img src="https://img.shields.io/badge/Capacitor-%23007AFF.svg?style=for-the-badge&logo=capacitor&logoColor=white" />
+   <img src="https://img.shields.io/badge/Android%20Studio-%233DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white" />
+</div>
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚦 Prerequisites
 
-## How can I edit this code?
+- <span style="color:#339933">Node.js & npm</span> installed
+- <span style="color:#007AFF">Capacitor</span> installed (`npm install @capacitor/core @capacitor/cli`)
+- <span style="color:#3DDC84">Android Studio</span> installed
 
-There are several ways of editing your application.
+## 🛠️ Steps to Build APK
 
-**Use Lovable**
+<details>
+<summary><b>Expand for step-by-step instructions</b></summary>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1️⃣ **Install dependencies:**
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm install
 ```
 
-**Edit a file directly in GitHub**
+2️⃣ **Build the web app:**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+3️⃣ **Initialize Capacitor (if not done):**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npx cap init
+```
 
-## What technologies are used for this project?
+4️⃣ **Add Android platform:**
 
-This project is built with:
+```bash
+npm install @capacitor/android
+npx cap add android
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+5️⃣ **Copy build files to Android project:**
 
-## How can I deploy this project?
+```bash
+npx cap copy
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+6️⃣ **Open Android project in Android Studio:**
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npx cap open android
+```
 
-Yes, you can!
+7️⃣ **In Android Studio, go to:**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```
+Build > Generate App Bundles or APKs > Generate APKs
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Wait for the build to finish.
+
+</details>
+
+---
+
+## 📂 Where to Find the APK
+
+After building, your APK will be located at:
+
+```diff
+android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+---
+
+## 📲 How to Install on Your Phone
+
+1. 🚚 **Transfer** `app-debug.apk` to your Android device (USB, email, cloud, etc.).
+2. 📥 **Open** the file on your device and follow the prompts to install.
+3. ⚙️ **Enable installation from unknown sources** in your device settings if prompted.
+
+---
+
+> ℹ️ For release (signed) APK instructions, or Play Store publishing, see the official [Capacitor Documentation](https://capacitorjs.com/docs) and [Android Documentation](https://developer.android.com/studio/publish).
+
+---
